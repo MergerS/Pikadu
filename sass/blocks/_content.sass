@@ -1,0 +1,150 @@
+.content
+  max-width: 1200px
+  width: 90%
+  margin: auto
+  padding-top: 30px
+  display: flex
+  align-items: flex-start
+  justify-content: space-between
+.posts
+  width: 67%
+.post
+  background-color: $white
+  border: 1px solid #E8E8E8
+  margin-bottom: 30px
+  &__body
+    padding-top: 35px
+    padding-left: 35px
+    padding-right: 35px
+    padding-bottom: 0
+  &__title
+    margin-top: 0
+    margin-bottom: 19px
+    font-style: normal
+    font-weight: 600
+    font-size: 16px
+    line-height: 24px
+    color: $text
+  &__text
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 22px
+    color: $text
+  &__tags
+    margin-bottom: 22px
+  &__tag
+    font-style: normal
+    font-weight: 400
+    font-size: 14px
+    line-height: 22px
+    color: $gray
+    padding-right: 10px
+    text-decoration: none
+  &__footer
+    background: $text-color
+    border-top: 1px solid #E8E8E8
+    display: flex
+    justify-content: space-between
+    padding-left: 35px
+    padding-right: 35px
+    padding-top: 13px
+    padding-bottom: 13px
+  &__button
+    display: flex
+    align-items: center
+    margin-right: 19px
+    &--btn
+      background-color: trasparent
+      border: none
+      color: #8C8C8C
+      display: flex
+      align-items: center
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 22px
+      cursor: pointer
+  &__author
+    display: flex
+    align-items: center
+    text-align: right
+    &--img
+      width: 34px
+      height: 34px
+      border-radius: 4px
+    &--abouts
+      padding-right: 9px
+    &--username
+      text-decoration: none
+      display: block
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 20px
+      color: #8C8C8C
+    &--time
+      font-style: normal
+      font-weight: 400
+      font-size: 12px
+      line-height: 20px
+      color: #BFBFBF
+.sidebar
+  width: 30%
+  background: $white
+.user
+  border: 1px solid #E8E8E8
+  padding: 15px 25px
+  display: flex
+  align-items: center
+  justify-content: space-between
+  &__info
+    display: flex
+    align-items: center
+    text-decoration: none
+    &--avatar
+      border-radius: 50%
+      margin-right: 17px
+    &--name
+      font-style: normal
+      font-weight: 600
+      font-size: 16px
+      line-height: 24px
+      color: #595959
+.sidebar
+  &__nav
+    background: $white
+  &__menu
+    list-style: none
+    margin: 0
+    border: 1px solid #E8E8E8
+    border-top: none
+    padding: 0
+    &--link
+      text-decoration: none
+      font-style: normal
+      font-weight: 400
+      font-size: 14px
+      line-height: 22px
+      color: #595959
+      padding: 16px 48px
+      display: inline-block
+      width: 100%
+    &--link:hover
+      background: #FFFBE6
+  &__newpost
+    display: block
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 100%
+    padding: 13px
+    background: #FAAD14
+    border-radius: 4px
+    text-decoration: none
+    font-style: normal
+    font-weight: 400
+    font-size: 16px
+    line-height: 24px
+    color: $white
+    margin-top: 20px
