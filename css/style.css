@@ -952,7 +952,6 @@ template {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center;
-  width: 370px;
   padding: 13px;
   background: #FAAD14;
   -webkit-border-radius: 4px;
@@ -981,7 +980,6 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  width: 125px;
   background: #FFFFFF;
   border: 1px solid #FFC53D;
   -webkit-border-radius: 4px;
@@ -1010,7 +1008,6 @@ template {
       -ms-flex-pack: center;
           justify-content: center;
   text-decoration: none;
-  width: 125px;
   background: #FFFFFF;
   border: 1px solid #FFC53D;
   -webkit-border-radius: 4px;
