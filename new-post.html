@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Pikadu - Опубликовать пост</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__wrapper">
+      <a href="index.html" class="header__logo">
+        <img src="img/Pikadu.svg" alt="Pikadu">
+      </a>
+      <nav class="header__nav">
+        <ul class="header__menu">
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Свежее </a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Лучшее</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Горячее</a>
+          </li>
+          <li class="header__menu--item">
+            <a href="#" class="header__menu--link">Подписки</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="input-group search">
+        <input type="text" class="search__input" placeholder="Поиск по сайту">
+        <button class="search__btn"><img src="img/input-btn.svg" alt="icon" class="search__btn--icon"></button>
+      </div> 
+      <a href="#" class="menu-toggle" id="menu-toggle">
+        <span class="menu-toggle__btn"></span>
+        <span class="menu-toggle__btn"></span>
+        <span class="menu-toggle__btn"></span>
+      </a>
+    </div>
+  </header>
+  <div class="content">
+    <main class="newpost">
+      <input type="text" class="newpost__title" placeholder="Заголовок поста">
+      <input type="text" class="newpost__text" placeholder="Текст вашего поста">
+      <div class="newpost__btn">
+        <a href="#" class="newpost__btn--send">
+        <svg class="icon__fire">
+          <use width="11" height="13" xlink:href="img/icons.svg#fire"></use>
+        </svg>Опубликовать пост</a>
+        <a href="#" class="newpost__btn--video"><svg class="icon__video">
+          <use width="14" height="11" xlink:href="img/icons.svg#Video"></use>
+        </svg>Видео</a>
+        <a href="#" class="newpost__btn--photo"><svg class="icon__photo">
+          <use width="14" height="11" xlink:href="img/icons.svg#photo"></use>
+        </svg>Фото</a>
+      </div>
+    </main>
+    <anside class="sidebar">
+      <div class="user">
+        <a href="#" class="user__info">
+          <img width="40" height="40" src="img/user-avatar.jpg" alt="Avatar" class="user__info--avatar">
+          <span class="user__info--name">Елена Тропикова</span>
+        </a>
+        <a href="#" class="user__exit">
+          <svg width="20" height="20" class="icon">
+            <use xlink:href="img/icons.svg#close"></use>
+          </svg>
+        </a>
+      </div>
+      <div class="sidebar__nav">
+        <ul class="sidebar__menu">
+          <li class="sidebar__menu--item">
+            <a href="#" class="sidebar__menu--link">Ответы </a>
+          </li>
+          <li class="sidebar__menu--item">
+            <a href="#" class="sidebar__menu--link">Комментарии</a>
+          </li>
+          <li class="sidebar__menu--item active">
+            <a href="#" class="sidebar__menu--link">Оценки</a>
+          </li>
+          <li class="sidebar__menu--item">
+            <a href="#" class="sidebar__menu--link">Сохраненное</a>
+          </li>
+          <li class="sidebar__menu--item">
+            <a href="#" class="sidebar__menu--link">Подписки</a>
+          </li>
+          <li class="sidebar__menu--item">
+            <a href="#" class="sidebar__menu--link">Заметки</a>
+          </li>
+          <li class="sidebar__menu--item">
+            <a href="#" class="sidebar__menu--link">Игнор-лист</a>
+          </li>
+        </ul>
+      </div>
+    </anside>
+  </div>
+  <script src="js/main.js"></script>  
+</body>
+</html>
