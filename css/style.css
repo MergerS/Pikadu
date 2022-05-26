@@ -456,6 +456,10 @@ template {
           justify-content: center;
 }
 
+.menu-toggle {
+  display: none;
+}
+
 .content {
   max-width: 1200px;
   width: 90%;
@@ -789,4 +793,114 @@ template {
   font-size: 12px;
   line-height: 20px;
   color: #FFFFFF;
+}
+
+@media (max-width: 990px) {
+  .menu-toggle {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    margin-left: 15px;
+  }
+  .menu-toggle__btn {
+    height: 2px;
+    width: 100%;
+    background-color: #FFFFFF;
+  }
+  .header {
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    top: 0;
+    right: 0;
+    width: 100%;
+  }
+  .header__nav {
+    position: fixed;
+    margin-left: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #FA8C16;
+    padding-top: 16px;
+    padding-bottom: 16px;
+    drop-shadow: 0px 2px 8px rgba(0, 0, 0, 0.15);
+  }
+  .header__menu {
+    width: 90%;
+    margin: auto;
+  }
+  .content {
+    margin-top: 94px;
+    margin-bottom: 60px;
+  }
+  .sidebar {
+    position: fixed;
+    z-index: 101;
+    top: 64px;
+    right: 0;
+    bottom: 0;
+    height: -webkit-calc(100% - 118px);
+    height: calc(100% - 118px);
+    max-width: 320px;
+    width: 100%;
+    background-color: #FFFFFF;
+    -webkit-box-shadow: 1px 1px 10px black;
+            box-shadow: 1px 1px 10px black;
+    padding: 30px;
+    -webkit-transform: translateX(100%);
+        -ms-transform: translateX(100%);
+            transform: translateX(100%);
+    -webkit-transition: -webkit-transform 0.2s;
+    transition: -webkit-transform 0.2s;
+    -o-transition: transform 0.2s;
+    transition: transform 0.2s;
+    transition: transform 0.2s, -webkit-transform 0.2s;
+    overflow-y: auto;
+  }
+  .sidebar__visible {
+    -webkit-transform: translateX(0);
+        -ms-transform: translateX(0);
+            transform: translateX(0);
+  }
+  .posts {
+    width: 100%;
+  }
+}
+
+@media (max-width: 576px) {
+  .post__footer {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .post__author {
+    padding-top: 15px;
+  }
+  .post__author--abouts {
+    -webkit-box-ordinal-group: 3;
+    -webkit-order: 2;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: left;
+    margin-left: 10px;
+  }
+  .post__avatar {
+    margin-left: 0;
+    margin-right: 10px;
+  }
 }
